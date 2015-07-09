@@ -4,7 +4,7 @@
 // .js-offset-protect        // the container
 // .js-offset-protect__item  // each item to protect
 //------------------------------------------------------------------------------
-function offsetProtect() {
+(function($) {
 	var $offsetProtect = $('.js-offset-protect');
 	$offsetProtect.each(function() {
 		var $offsetProtectContainer = $(this);
@@ -22,4 +22,4 @@ function offsetProtect() {
 	});
 	// HACK to get it to "reload" its own content to display correctly:
 	$offsetProtect.html($offsetProtect.children());
-}
+})(jQuery);
